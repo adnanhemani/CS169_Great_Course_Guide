@@ -6,6 +6,9 @@
 
 require 'cucumber/rails'
 require 'simplecov'
+require 'simplecov-cobertura'
+
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 SimpleCov.start 'rails'
 Capybara.ignore_hidden_elements = true
 
